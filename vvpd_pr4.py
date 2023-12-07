@@ -76,3 +76,4 @@ def late_list (grades: dict, deadline_date: str) -> list:
 
 print(deadline_score('13.11.2023', '12.11.2023'))
 print(late_list({'Иванов': '03.09.2020', 'Петров': '01.09.2020'}, '02.09.2020'))
+
