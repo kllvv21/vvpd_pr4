@@ -74,7 +74,31 @@ def late_list (grades: dict, deadline_date: str) -> list:
         print("Увы, дата написана неправильно!")
 
 
+def main():
+    while True:
+        try:
+            print("Операция 1 - Определение оценки за работу")
+            print("Операция 2 - Определение студентов, сдавших работу после дедлайна")
+            code = input('Введите код операции: ')
+            match code:
+                case '1':
+                    pass_date = input("Введите дату сдачи работы (dd.mm.yyyy): ")
+                    deadline_date = input("Введите дату дедлайна работы (dd.mm.yyyy): ")
+                    print(deadline_score(pass_date, deadline_date))
+                case '2':
+                    print(late_list({'Иванов': '03.09.2020', 'Петров': '01.09.2020'}, '02.09.2020'))
+                case '3':
+                    raise KeyboardInterrupt
+        except KeyboardInterrupt:
+            print("Программа прервана")
+            print("До новой встречи!")
+            break
+
+
+main()
+
 
 print(deadline_score('13.11.2023', '12.11.2023'))
 print(late_list({'Иванов': '03.09.2020', 'Петров': '01.09.2020'}, '02.09.2020'))
+print("Пока-пока!)")
 
