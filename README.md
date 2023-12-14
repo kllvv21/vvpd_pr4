@@ -43,8 +43,10 @@
                 or not deadline_date[6:].isdigit()):
             raise ValueError
 ```
+## Формулы
+$`delta = pdate - ddate`$
 ## Картинки
-Cтудент, когда пропустил дедлайн:
+Cтудент, когда сегодня у всех дедлайн физры и екурсы легли:
 ![Грустный студент](https://mykaleidoscope.ru/x/uploads/posts/2022-10/1666237066_13-mykaleidoscope-ru-p-grustnii-student-pinterest-20.jpg)
 ## Используемые ссылки
 [Документация библиотеки Datetime](https://docs.python.org/3/library/datetime.html)
