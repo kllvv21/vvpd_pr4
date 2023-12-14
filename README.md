@@ -43,6 +43,9 @@
                 or not deadline_date[6:].isdigit()):
             raise ValueError
 ```
+## Формула
+$`delta = pdate - ddate`$
+
 ## Картинки
 Cтудент, когда у всех горит дедлайн физры, а екурсы легли:
 ![Грустный студент](https://mykaleidoscope.ru/x/uploads/posts/2022-10/1666237066_13-mykaleidoscope-ru-p-grustnii-student-pinterest-20.jpg)
